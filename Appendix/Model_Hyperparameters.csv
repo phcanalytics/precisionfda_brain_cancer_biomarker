@@ -1,0 +1,75 @@
+,Model Name,Hyperparameter,Value
+Feature Selection,PCA,n components,0.8
+,PCA,n components,0.9
+,PCA,n components,0.95
+,LassoSelect,,
+,RidgeSelect,,
+ML Model,XGBoost,subsample,0.25
+,XGBoost,subsample,0.5
+,XGBoost,subsample,0.75
+,XGBoost,subsample,1
+,XGBoost,max depth,2
+,XGBoost,max depth,3
+,XGBoost,max depth,4
+,XGBoost,max depth,5
+,XGBoost,max depth,6
+,XGBoost,max depth,7
+,XGBoost,max depth,8
+,XGBoost,min split loss,0
+,XGBoost,min split loss,0.1
+,XGBoost,min split loss,1
+,XGBoost,min split loss,10
+,XGBoost,learning rate,0.5
+,XGBoost,learning rate,0.3
+,XGBoost,learning rate,0.03
+,XGBoost,learning rate,0.003
+,XGBoost,L2 weight,1
+,XGBoost,L2 weight,0.1
+,XGBoost,L2 weight,0.001
+,XGBoost,L2 weight,0
+,XGBoost,L1 weight,1
+,XGBoost,L1 weight,0.1
+,XGBoost,L1 weight,0.001
+,XGBoost,L1 weight,0
+,XGBoost,number boost runs,5
+,XGBoost,number boost runs,10
+,XGBoost,number boost runs,15
+,XGBoost,number boost runs,20
+,RandomForest,max depth,3
+,RandomForest,max depth,4
+,RandomForest,max depth,5
+,RandomForest,max depth,6
+,RandomForest,n estimators,32
+,RandomForest,n estimators,64
+,RandomForest,n estimators,128
+,RandomForest,n estimators,256
+,RandomForest,n estimators,512
+,RandomForest,criterion,gini
+,RandomForest,criterion,entropy
+,NeuralNetwork,dropout,0
+,NeuralNetwork,dropout,0.35
+,NeuralNetwork,new layers,1
+,NeuralNetwork,new layers,2
+,NeuralNetwork,new layers,3
+,NeuralNetwork,L2 weight,0
+,NeuralNetwork,L2 weight,0.0001
+,NeuralNetwork,L2 weight,0.00001
+,NeuralNetwork,batch size,8
+,NeuralNetwork,batch size,16
+,NeuralNetwork,batch size,32
+,NeuralNetwork,batch size,64
+,NeuralNetwork,batch size,128
+,NeuralNetwork,number units,16
+,NeuralNetwork,number units,32
+,NeuralNetwork,number units,64
+,NeuralNetwork,number units,128
+,NeuralNetwork,number units,256
+,NeuralNetwork,learning rate,0.0001
+,NeuralNetwork,learning rate,0.001
+,NeuralNetwork,learning rate,0.01
+,NeuralNetwork,with Batch normalization,TRUE
+,NeuralNetwork,with Batch normalization,FALSE
+,NeuralNetwork,activation,relu
+,NeuralNetwork,activation,selu
+,NeuralNetwork,activation,elu
+,LogisticRegression,,

@@ -1,0 +1,237 @@
+Tier,Sub-challenge,Feature name,Comment(Biomarker),Ref.
+1,1,IDH1,mutation of IDH1,https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5461965/
+1,1,IDH2,mutation of IDH2,https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5461965/
+1,1,MGMT,methylation,https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5461965/
+1,2,1p36.33,codeletion of 1p and 19q,https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5461965/
+1,2,1p36.32,codeletion of 1p and 19q,https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5461966/
+1,2,1p36.31,codeletion of 1p and 19q,https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5461967/
+1,2,1p36.23,codeletion of 1p and 19q,https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5461968/
+1,2,1p36.22,codeletion of 1p and 19q,https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5461969/
+1,2,1p36.21,codeletion of 1p and 19q,https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5461970/
+1,2,1p36.13,codeletion of 1p and 19q,https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5461971/
+1,2,1p36.12,codeletion of 1p and 19q,https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5461972/
+1,2,1p36.11,codeletion of 1p and 19q,https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5461973/
+1,2,1p35.3,codeletion of 1p and 19q,https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5461974/
+1,2,1p35.2,codeletion of 1p and 19q,https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5461975/
+1,2,1p35.1,codeletion of 1p and 19q,https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5461976/
+1,2,1p34.3,codeletion of 1p and 19q,https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5461977/
+1,2,1p34.2,codeletion of 1p and 19q,https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5461978/
+1,2,1p34.1,codeletion of 1p and 19q,https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5461979/
+1,2,1p33,codeletion of 1p and 19q,https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5461980/
+1,2,1p32.3,codeletion of 1p and 19q,https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5461981/
+1,2,1p32.2,codeletion of 1p and 19q,https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5461982/
+1,2,1p32.1,codeletion of 1p and 19q,https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5461983/
+1,2,1p31.3,codeletion of 1p and 19q,https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5461984/
+1,2,1p31.2,codeletion of 1p and 19q,https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5461985/
+1,2,1p31.1,codeletion of 1p and 19q,https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5461986/
+1,2,1p22.3,codeletion of 1p and 19q,https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5461987/
+1,2,1p22.2,codeletion of 1p and 19q,https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5461988/
+1,2,1p22.1,codeletion of 1p and 19q,https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5461989/
+1,2,1p21.3,codeletion of 1p and 19q,https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5461990/
+1,2,1p21.2,codeletion of 1p and 19q,https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5461991/
+1,2,1p21.1,codeletion of 1p and 19q,https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5461992/
+1,2,1p13.3,codeletion of 1p and 19q,https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5461993/
+1,2,1p13.2,codeletion of 1p and 19q,https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5461994/
+1,2,1p13.1,codeletion of 1p and 19q,https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5461995/
+1,2,1p12,codeletion of 1p and 19q,https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5461996/
+1,2,1p11.2,codeletion of 1p and 19q,https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5461997/
+1,2,1p11.1,codeletion of 1p and 19q,https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5461998/
+1,2,19q11,codeletion of 1p and 19q,https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5461999/
+1,2,19q12,codeletion of 1p and 19q,https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5462000/
+1,2,19q13.11,codeletion of 1p and 19q,https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5462001/
+1,2,19q13.12,codeletion of 1p and 19q,https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5462002/
+1,2,19q13.13,codeletion of 1p and 19q,https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5462003/
+1,2,19q13.2,codeletion of 1p and 19q,https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5462004/
+1,2,19q13.31,codeletion of 1p and 19q,https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5462005/
+1,2,19q13.32,codeletion of 1p and 19q,https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5462006/
+1,2,19q13.33,codeletion of 1p and 19q,https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5462007/
+1,2,19q13.41,codeletion of 1p and 19q,https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5462008/
+1,2,19q13.42,codeletion of 1p and 19q,https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5462009/
+1,2,19q13.43,codeletion of 1p and 19q,https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5462010/
+1,3,IDH1,mutation of IDH1,https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5461965/
+1,3,IDH2,mutation of IDH2,https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5461965/
+1,3,1p36.33,codeletion of 1p and 19q,https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5462010/
+1,3,1p36.32,codeletion of 1p and 19q,https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5462011/
+1,3,1p36.31,codeletion of 1p and 19q,https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5462012/
+1,3,1p36.23,codeletion of 1p and 19q,https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5462013/
+1,3,1p36.22,codeletion of 1p and 19q,https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5462014/
+1,3,1p36.21,codeletion of 1p and 19q,https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5462015/
+1,3,1p36.13,codeletion of 1p and 19q,https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5462016/
+1,3,1p36.12,codeletion of 1p and 19q,https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5462017/
+1,3,1p36.11,codeletion of 1p and 19q,https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5462018/
+1,3,1p35.3,codeletion of 1p and 19q,https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5462019/
+1,3,1p35.2,codeletion of 1p and 19q,https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5462020/
+1,3,1p35.1,codeletion of 1p and 19q,https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5462021/
+1,3,1p34.3,codeletion of 1p and 19q,https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5462022/
+1,3,1p34.2,codeletion of 1p and 19q,https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5462023/
+1,3,1p34.1,codeletion of 1p and 19q,https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5462024/
+1,3,1p33,codeletion of 1p and 19q,https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5462025/
+1,3,1p32.3,codeletion of 1p and 19q,https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5462026/
+1,3,1p32.2,codeletion of 1p and 19q,https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5462027/
+1,3,1p32.1,codeletion of 1p and 19q,https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5462028/
+1,3,1p31.3,codeletion of 1p and 19q,https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5462029/
+1,3,1p31.2,codeletion of 1p and 19q,https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5462030/
+1,3,1p31.1,codeletion of 1p and 19q,https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5462031/
+1,3,1p22.3,codeletion of 1p and 19q,https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5462032/
+1,3,1p22.2,codeletion of 1p and 19q,https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5462033/
+1,3,1p22.1,codeletion of 1p and 19q,https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5462034/
+1,3,1p21.3,codeletion of 1p and 19q,https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5462035/
+1,3,1p21.2,codeletion of 1p and 19q,https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5462036/
+1,3,1p21.1,codeletion of 1p and 19q,https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5462037/
+1,3,1p13.3,codeletion of 1p and 19q,https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5462038/
+1,3,1p13.2,codeletion of 1p and 19q,https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5462039/
+1,3,1p13.1,codeletion of 1p and 19q,https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5462040/
+1,3,1p12,codeletion of 1p and 19q,https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5462041/
+1,3,1p11.2,codeletion of 1p and 19q,https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5462042/
+1,3,1p11.1,codeletion of 1p and 19q,https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5462043/
+1,3,19q11,codeletion of 1p and 19q,https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5462044/
+1,3,19q12,codeletion of 1p and 19q,https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5462045/
+1,3,19q13.11,codeletion of 1p and 19q,https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5462046/
+1,3,19q13.12,codeletion of 1p and 19q,https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5462047/
+1,3,19q13.13,codeletion of 1p and 19q,https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5462048/
+1,3,19q13.2,codeletion of 1p and 19q,https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5462049/
+1,3,19q13.31,codeletion of 1p and 19q,https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5462050/
+1,3,19q13.32,codeletion of 1p and 19q,https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5462051/
+1,3,19q13.33,codeletion of 1p and 19q,https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5462052/
+1,3,19q13.41,codeletion of 1p and 19q,https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5462053/
+1,3,19q13.42,codeletion of 1p and 19q,https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5462054/
+1,3,19q13.43,codeletion of 1p and 19q,https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5462055/
+1,3,MGMT,methylation of MGMT,https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5462056/
+2,1,OSBPL3,RNA expression of OSBPL3,https://europepmc.org/article/pmc/pmc2605252
+2,1,TP53,mutation of TP53,https://europepmc.org/article/pmc/pmc2605252
+2,1,GLI1,Hedgehog pathway,https://europepmc.org/article/pmc/pmc2605252
+2,1,PTCH1,Hedgehog pathway,https://europepmc.org/article/pmc/pmc2605252
+2,1,SHH,Hedgehog pathway,https://europepmc.org/article/pmc/pmc2605252
+2,1,FZD2,Wnt pathway,https://europepmc.org/article/pmc/pmc2605252
+2,1,FZD4,Wnt pathway,https://europepmc.org/article/pmc/pmc2605252
+2,1,WNT2,Wnt pathway,https://europepmc.org/article/pmc/pmc2605252
+2,1,WNT4,Wnt pathway,https://europepmc.org/article/pmc/pmc2605252
+2,1,WNT5A,Wnt pathway,https://europepmc.org/article/pmc/pmc2605252
+2,1,WNT5B,Wnt pathway,https://europepmc.org/article/pmc/pmc2605252
+2,1,WNT6,Wnt pathway,https://europepmc.org/article/pmc/pmc2605252
+2,2,2p24.3,MYCN CNV,https://europepmc.org/article/pmc/pmc2605252
+2,2,2q14.2,GLI2 CNV,https://europepmc.org/article/pmc/pmc2605252
+2,3,2p24.3,MYCN CNV,https://europepmc.org/article/pmc/pmc2605252
+2,3,2q14.2,GLI2 CNV,https://europepmc.org/article/pmc/pmc2605252
+2,3,OSBPL3,RNA expression of OSBPL3,https://europepmc.org/article/pmc/pmc2605252
+2,3,TP53,mutation of TP53,https://europepmc.org/article/pmc/pmc2605252
+2,3,GLI1,Hedgehog pathway,https://europepmc.org/article/pmc/pmc2605252
+2,3,PTCH1,Hedgehog pathway,https://europepmc.org/article/pmc/pmc2605252
+2,3,SHH,Hedgehog pathway,https://europepmc.org/article/pmc/pmc2605252
+2,3,FZD2,Wnt pathway,https://europepmc.org/article/pmc/pmc2605252
+2,3,FZD4,Wnt pathway,https://europepmc.org/article/pmc/pmc2605252
+2,3,WNT2,Wnt pathway,https://europepmc.org/article/pmc/pmc2605252
+2,3,WNT4,Wnt pathway,https://europepmc.org/article/pmc/pmc2605252
+2,3,WNT5A,Wnt pathway,https://europepmc.org/article/pmc/pmc2605252
+2,3,WNT5B,Wnt pathway,https://europepmc.org/article/pmc/pmc2605252
+2,3,WNT6,Wnt pathway,https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5461965/
+3,1,EGFR,mutation of EGFR,https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5461965/
+3,1,TERT,mutation of TERT,https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5461965/
+3,1,ATRX,mutation of ATRX,https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5461965/
+3,1,BRAF,mutation of BRAF,https://academic.oup.com/noa/article/1/1/vdz013/5529720
+3,1,PDGFRA,mutation of PDGFRA,https://academic.oup.com/noa/article/1/1/vdz013/5529720
+3,1,FAT1,mutation of FAT1,https://academic.oup.com/noa/article/1/1/vdz013/5529720
+3,1,PPM1D,mutation of PPM1D,https://academic.oup.com/noa/article/1/1/vdz013/5529720
+3,1,NF1,mutation of NF1,https://academic.oup.com/noa/article/1/1/vdz013/5529720
+3,1,PIK3CA,mutation of PIK3CA,https://academic.oup.com/noa/article/1/1/vdz013/5529720
+3,1,ACVR1,mutation of ACVR1,https://academic.oup.com/noa/article/1/1/vdz013/5529720
+3,1,PTEN,mutation of PTEN,https://academic.oup.com/noa/article/1/1/vdz013/5529720
+3,1,RASSF1,methylation of RASSF1,https://academic.oup.com/noa/article/1/1/vdz013/5529720
+3,1,KIAA1549,BRAF/KIAA1549?fusion,https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5461965/
+3,1,GFAP,elevated protein expression of GFAP,https://academic.oup.com/noa/article/1/1/vdz013/5529720
+3,1,BMP2,elevated protein expression of BMP2,https://academic.oup.com/noa/article/1/1/vdz013/5529720
+3,1,IGFBP2,elevated protein expression of IGFBP2,https://academic.oup.com/noa/article/1/1/vdz013/5529720
+3,1,CXCL10,elevated protein expression of CXCL10,https://academic.oup.com/noa/article/1/1/vdz013/5529720
+3,1,CHI3L1,elevated protein expression of CHI3L1,https://academic.oup.com/noa/article/1/1/vdz013/5529720
+3,1,MBP,elevated protein expression of MBP,https://academic.oup.com/noa/article/1/1/vdz013/5529720
+3,1,B2M,elevated protein expression of B2M,https://academic.oup.com/noa/article/1/1/vdz013/5529720
+3,1,AHF,elevated protein expression of AHF,https://academic.oup.com/noa/article/1/1/vdz013/5529720
+3,1,SPARC,elevated protein expression of SPARC,https://academic.oup.com/noa/article/1/1/vdz013/5529720
+3,1,ATRN,elevated protein expression of ATRN,https://academic.oup.com/noa/article/1/1/vdz013/5529720
+3,1,ANG,elevated protein expression of ANG,https://academic.oup.com/noa/article/1/1/vdz013/5529720
+3,1,TIMP1,elevated protein expression of TIMP1,https://academic.oup.com/noa/article/1/1/vdz013/5529720
+3,1,TIMP2,elevated protein expression of TIMP2,https://academic.oup.com/noa/article/1/1/vdz013/5529720
+3,2,1p36.32,AJAP1 Deletion and Chr1:3928417-3978407 Deletion,https://europepmc.org/article/pmc/pmc2605252
+3,2,2p11.2,ATOH8 Amplification,https://europepmc.org/article/pmc/pmc2605252
+3,2,1p36.23,CAMTA1 Deletion and TNFRSF9 Deletion,https://europepmc.org/article/pmc/pmc2605252
+3,2,1p36.31,CAMTA1 Deletion and CHD5 Deletion,https://europepmc.org/article/pmc/pmc2605252
+3,2,12q13.3,CDK4 Amplification,https://europepmc.org/article/pmc/pmc2605252
+3,2,9p21.3,CDKN2A Deletion and Chr9:20240063-20280240 Deletion,https://europepmc.org/article/pmc/pmc2605252
+3,2,1p32.3,CDKN2C Deletion,https://europepmc.org/article/pmc/pmc2605252
+3,2,7p11.2,EGFR Amplification,https://europepmc.org/article/pmc/pmc2605252
+3,2,3q13.31,LSAMP Deletion,https://europepmc.org/article/pmc/pmc2605252
+3,2,12q15,MDM2 Amplification,https://europepmc.org/article/pmc/pmc2605252
+3,2,1q32.1,MDM4 Amplification,https://europepmc.org/article/pmc/pmc2605252
+3,2,2p23.3,NCOA1 Amplification and Chr2:24426149-24551934 Amplification and Chr2:24819254-24866786 Amplification,https://europepmc.org/article/pmc/pmc2605252
+3,2,17q11.2,NF1 Deletion and Chr17:28797037-29337463 Deletion and Chr17:26438606-26453055 Deletion,https://europepmc.org/article/pmc/pmc2605252
+3,2,10q23.1,PTEN Deletion,https://europepmc.org/article/pmc/pmc2605252
+3,2,10q23.2,PTEN Deletion,https://europepmc.org/article/pmc/pmc2605252
+3,2,8q13.1,SGK3 Amplification,https://europepmc.org/article/pmc/pmc2605252
+3,2,7p14.3,Chr7:32978614-32991778 Amplification,https://europepmc.org/article/pmc/pmc2605252
+3,2,2q13,Chr2:113106316-113112980 Amplification,https://europepmc.org/article/pmc/pmc2605252
+3,2,2q33.1,Chr2:202864197-203906650 Amplification,https://europepmc.org/article/pmc/pmc2605252
+3,2,2q33.2,Chr2:202864197-203906650 Amplification,https://europepmc.org/article/pmc/pmc2605252
+3,2,3q26.33,Chr3:181382003-181447344 Amplification,https://europepmc.org/article/pmc/pmc2605252
+3,2,3q13.12,Chr3:106776838-106776898 Amplification,https://europepmc.org/article/pmc/pmc2605252
+3,2,7q36.1,Chr7:152135252-152147233 Amplification,https://europepmc.org/article/pmc/pmc2605252
+3,2,11q13.4,Chr11:70513145-70559392 Deletion,https://europepmc.org/article/pmc/pmc2605252
+3,2,7q21.12,Chr7:86779323-86785351 Deletion,https://europepmc.org/article/pmc/pmc2605252
+3,2,10q23.31,Chr10:89545841-89680005 Deletion,https://europepmc.org/article/pmc/pmc2605252
+3,2,5q34,Chr5:164370828-164522125 Deletion,https://europepmc.org/article/pmc/pmc2605252
+3,3,1p36.32,AJAP1 Deletion and Chr1:3928417-3978407 Deletion,https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5461965/
+3,3,2p11.2,ATOH8 Amplification,https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5461965/
+3,3,1p36.23,CAMTA1 Deletion and TNFRSF9 Deletion,https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5461965/
+3,3,1p36.31,CAMTA1 Deletion and CHD5 Deletion,https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5461965/
+3,3,12q13.3,CDK4 Amplification,https://academic.oup.com/noa/article/1/1/vdz013/5529720
+3,3,9p21.3,CDKN2A Deletion and Chr9:20240063-20280240 Deletion,https://academic.oup.com/noa/article/1/1/vdz013/5529720
+3,3,1p32.3,CDKN2C Deletion,https://academic.oup.com/noa/article/1/1/vdz013/5529720
+3,3,7p11.2,EGFR Amplification,https://academic.oup.com/noa/article/1/1/vdz013/5529720
+3,3,3q13.31,LSAMP Deletion,https://academic.oup.com/noa/article/1/1/vdz013/5529720
+3,3,12q15,MDM2 Amplification,https://academic.oup.com/noa/article/1/1/vdz013/5529720
+3,3,1q32.1,MDM4 Amplification,https://academic.oup.com/noa/article/1/1/vdz013/5529720
+3,3,2p23.3,NCOA1 Amplification and Chr2:24426149-24551934 Amplification and Chr2:24819254-24866786 Amplification,https://academic.oup.com/noa/article/1/1/vdz013/5529720
+3,3,17q11.2,NF1 Deletion and Chr17:28797037-29337463 Deletion and Chr17:26438606-26453055 Deletion,https://academic.oup.com/noa/article/1/1/vdz013/5529720
+3,3,10q23.1,PTEN Deletion,https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5461965/
+3,3,10q23.2,PTEN Deletion,https://academic.oup.com/noa/article/1/1/vdz013/5529720
+3,3,8q13.1,SGK3 Amplification,https://academic.oup.com/noa/article/1/1/vdz013/5529720
+3,3,7p14.3,Chr7:32978614-32991778 Amplification,https://academic.oup.com/noa/article/1/1/vdz013/5529720
+3,3,2q13,Chr2:113106316-113112980 Amplification,https://academic.oup.com/noa/article/1/1/vdz013/5529720
+3,3,2q33.1,Chr2:202864197-203906650 Amplification,https://academic.oup.com/noa/article/1/1/vdz013/5529720
+3,3,2q33.2,Chr2:202864197-203906650 Amplification,https://academic.oup.com/noa/article/1/1/vdz013/5529720
+3,3,3q26.33,Chr3:181382003-181447344 Amplification,https://academic.oup.com/noa/article/1/1/vdz013/5529720
+3,3,3q13.12,Chr3:106776838-106776898 Amplification,https://academic.oup.com/noa/article/1/1/vdz013/5529720
+3,3,7q36.1,Chr7:152135252-152147233 Amplification,https://academic.oup.com/noa/article/1/1/vdz013/5529720
+3,3,11q13.4,Chr11:70513145-70559392 Deletion,https://academic.oup.com/noa/article/1/1/vdz013/5529720
+3,3,7q21.12,Chr7:86779323-86785351 Deletion,https://academic.oup.com/noa/article/1/1/vdz013/5529720
+3,3,10q23.31,Chr10:89545841-89680005 Deletion,https://academic.oup.com/noa/article/1/1/vdz013/5529720
+3,3,5q34,Chr5:164370828-164522125 Deletion,https://academic.oup.com/noa/article/1/1/vdz013/5529720
+3,3,EGFR,mutation of EGFR,https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5461965/
+3,3,TERT,mutation of TERT,https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5461965/
+3,3,ATRX,mutation of ATRX,https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5461965/
+3,3,BRAF,mutation of BRAF,https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5461965/
+3,3,PDGFRA,mutation of PDGFRA,https://cancerres.aacrjournals.org/content/canres/76/3/525.full.pdf
+3,3,FAT1,mutation of FAT1,https://cancerres.aacrjournals.org/content/canres/76/3/525.full.pdf
+3,3,PPM1D,mutation of PPM1D,https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5461965/
+3,3,NF1,mutation of NF1,https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5461965/
+3,3,PIK3CA,mutation of PIK3CA,https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5461965/
+3,3,ACVR1,mutation of ACVR1,https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5461965/
+3,3,PTEN,mutation of PTEN,https://academic.oup.com/noa/article/1/1/vdz013/5529720
+3,3,RASSF1,methylation of RASSF1,https://academic.oup.com/noa/article/1/1/vdz013/5529720
+3,3,KIAA1549,BRAF/KIAA1549?fusion,https://academic.oup.com/noa/article/1/1/vdz013/5529720
+3,3,GFAP,elevated protein expression of GFAP,https://academic.oup.com/noa/article/1/1/vdz013/5529720
+3,3,BMP2,elevated protein expression of BMP2,https://academic.oup.com/noa/article/1/1/vdz013/5529720
+3,3,IGFBP2,elevated protein expression of IGFBP2,https://academic.oup.com/noa/article/1/1/vdz013/5529720
+3,3,CXCL10,elevated protein expression of CXCL10,https://academic.oup.com/noa/article/1/1/vdz013/5529720
+3,3,CHI3L1,elevated protein expression of CHI3L1,https://academic.oup.com/noa/article/1/1/vdz013/5529720
+3,3,MBP,elevated protein expression of MBP,https://academic.oup.com/noa/article/1/1/vdz013/5529720
+3,3,B2M,elevated protein expression of B2M,https://academic.oup.com/noa/article/1/1/vdz013/5529720
+3,3,AHF,elevated protein expression of AHF,https://academic.oup.com/noa/article/1/1/vdz013/5529720
+3,3,SPARC,elevated protein expression of SPARC,https://academic.oup.com/noa/article/1/1/vdz013/5529720
+3,3,ATRN,elevated protein expression of ATRN,https://academic.oup.com/noa/article/1/1/vdz013/5529720
+3,3,ANG,elevated protein expression of ANG,https://academic.oup.com/noa/article/1/1/vdz013/5529720
+3,3,TIMP1,elevated protein expression of TIMP1,https://academic.oup.com/noa/article/1/1/vdz013/5529720
+3,3,TIMP2,elevated protein expression of TIMP2,https://academic.oup.com/noa/article/1/1/vdz013/5529720
+4,1,HIST1H3B,mutation of HIST1H3B,https://academic.oup.com/noa/article/1/1/vdz013/5529720
+4,1,H3F3B,mutation of H3F3B,https://academic.oup.com/noa/article/1/1/vdz013/5529720
+4,3,HIST1H3B,mutation of HIST1H3B,https://academic.oup.com/noa/article/1/1/vdz013/5529720
+4,3,H3F3B,mutation of H3F3B,https://academic.oup.com/noa/article/1/1/vdz013/5529720
