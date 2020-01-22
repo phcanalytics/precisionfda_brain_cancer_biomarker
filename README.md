@@ -16,7 +16,7 @@ License: [MIT-License](LICENSE.txt)
 
 ### Installation
 
-* Download the dataset files [here](https://drive.google.com/file/d/1Q8CMxRsYfs2ig5HtPMMmhdkz923GyADZ/view?usp=sharing) and unzip them to your local file system path `path/to/precisionFDA_dataset`.
+* Download the dataset files on the challenge website and unzip them to your local file system path `path/to/precisionFDA_dataset`.
 * Run `pip install .` (preferably in a [virtual environment](https://virtualenv.pypa.io/en/latest/)) to install all package dependencies.
 
 ### Usage
