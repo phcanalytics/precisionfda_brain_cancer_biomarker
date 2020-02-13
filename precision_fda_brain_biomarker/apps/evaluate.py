@@ -251,6 +251,16 @@ class EvaluationApplication(object):
         pickle.dump(self.args, open(loss_file_path, "wb"), pickle.HIGHEST_PROTOCOL)
 
         threshold = self.args["threshold"]
+        if isinstance(threshold, six.string_types):
+            with open(threshold, "rb") as fp:
+                score_dict = pickle.load(fp)
+            if isinstance(score_dict, dict) and "threshold" in score_dict:
+                threshold = score_dict["threshold"]
+            else:
+                print("ERROR: Could not load threshold from", threshold, ". Using None.", file=sys.stderr)
+                threshold = None
+        elif threshold is not None:
+            threshold = float(threshold)
         if self.args["do_evaluate"]:
             if evaluate_against == "test":
                 thres_generator, thres_steps = val_generator, val_steps
@@ -285,11 +295,12 @@ class EvaluationApplication(object):
             test_score = eval_score
             eval_score = thres_score
 
-        eval_score["model_path"] = test_score["model_path"] = self.get_model_path()
+        if eval_score is not None:
+            eval_score["model_path"] = test_score["model_path"] = self.get_model_path()
 
-        if self.args["feature_selection"] != "":
-            eval_score["feature_selection_path"] = test_score["feature_selection_path"] =\
-                self.get_feature_selection_path()
+            if self.args["feature_selection"] != "":
+                eval_score["feature_selection_path"] = test_score["feature_selection_path"] =\
+                    self.get_feature_selection_path()
 
         EvaluationApplication.save_score_dicts(eval_score, test_score, self.args["output_directory"])
 

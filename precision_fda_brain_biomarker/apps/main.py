@@ -64,18 +64,36 @@ class MainApplication(EvaluationApplication):
     def get_data(self, seed=0, resample=False, resample_seed=0):
         dataset = self.args["dataset"].lower()
 
-        if dataset == "sc1":
-            print("INFO: Loading Sub Challenge 1 (SC1) data.", file=sys.stderr)
-            return DataLoader.get_data_ph1_sc1(self.args, seed=seed,
-                                               do_resample=resample, resample_seed=resample_seed)
-        elif dataset == "sc2":
-            print("INFO: Loading Sub Challenge 2 (SC2) data.", file=sys.stderr)
-            return DataLoader.get_data_ph1_sc2(self.args, seed=seed,
-                                               do_resample=resample, resample_seed=resample_seed)
-        elif dataset == "sc3":
-            print("INFO: Loading Sub Challenge 3 (SC3) data.", file=sys.stderr)
-            return DataLoader.get_data_ph1_sc3(self.args, seed=seed,
-                                               do_resample=resample, resample_seed=resample_seed)
+        phase = 1
+        if "ph2" in dataset:
+            phase = 2
+
+        if phase == 1:
+            if "sc1" in dataset:
+                print("INFO: Loading Sub Challenge 1 (SC1) data.", file=sys.stderr)
+                return DataLoader.get_data_ph1_sc1(self.args, seed=seed,
+                                                   do_resample=resample, resample_seed=resample_seed)
+            elif "sc2" in dataset:
+                print("INFO: Loading Sub Challenge 2 (SC2) data.", file=sys.stderr)
+                return DataLoader.get_data_ph1_sc2(self.args, seed=seed,
+                                                   do_resample=resample, resample_seed=resample_seed)
+            elif "sc3" in dataset:
+                print("INFO: Loading Sub Challenge 3 (SC3) data.", file=sys.stderr)
+                return DataLoader.get_data_ph1_sc3(self.args, seed=seed,
+                                                   do_resample=resample, resample_seed=resample_seed)
+        else:
+            if "sc1" in dataset:
+                print("INFO: Loading Sub Challenge 1 (SC1) data (Ph2).", file=sys.stderr)
+                return DataLoader.get_data_ph2_sc1(self.args, seed=seed,
+                                                   do_resample=resample, resample_seed=resample_seed)
+            elif "sc2" in dataset:
+                print("INFO: Loading Sub Challenge 2 (SC2) data (Ph2).", file=sys.stderr)
+                return DataLoader.get_data_ph2_sc2(self.args, seed=seed,
+                                                   do_resample=resample, resample_seed=resample_seed)
+            elif "sc3" in dataset:
+                print("INFO: Loading Sub Challenge 3 (SC3) data (Ph2).", file=sys.stderr)
+                return DataLoader.get_data_ph2_sc3(self.args, seed=seed,
+                                                   do_resample=resample, resample_seed=resample_seed)
 
     def get_num_losses(self):
         return 1
@@ -161,7 +179,7 @@ class MainApplication(EvaluationApplication):
         resample_with_replacement = self.args["resample_with_replacement"]
         if resample_with_replacement:
             base_params = {
-                "seed": [0, 2**32-1],
+                "seed": [0, 2 ** 32 - 1],
             }
         else:
             base_params = {}
@@ -371,7 +389,7 @@ class MainApplication(EvaluationApplication):
 
             whiten_pca = self.args["whiten_pca"]
             n_neighbors = self.args['n_neighbors'] if "n_neighbors" in self.args else 10
-            
+
             feature_selection_params = {
                 "n_components": pca_n_components,
                 "whiten": whiten_pca,
@@ -397,8 +415,10 @@ class MainApplication(EvaluationApplication):
     def train_model(self, train_generator, train_steps, val_generator, val_steps):
         print("INFO: Started training model.", file=sys.stderr)
 
-        assert train_steps > 0, "You specified a batch_size that is bigger than the size of the train set."
-        assert val_steps > 0, "You specified a batch_size that is bigger than the size of the validation set."
+        assert train_steps > 0 or not self.args["do_train"], \
+            "You specified a batch_size that is bigger than the size of the train set."
+        assert val_steps > 0 or not self.args["do_train"], \
+            "You specified a batch_size that is bigger than the size of the validation set."
 
         self.save_config()
         model_path = self.get_model_path()
@@ -435,6 +455,9 @@ class MainApplication(EvaluationApplication):
         if with_print:
             print("INFO: Started evaluation.", file=sys.stderr)
 
+        if test_steps == 0:
+            return None
+
         scores = ModelEvaluation.evaluate(model, test_generator, test_steps, set_name,
                                           threshold=threshold, with_print=with_print)
         return scores
@@ -449,6 +472,9 @@ class MainApplication(EvaluationApplication):
         for generator_fun, generator_name in zip(generators, generator_names):
             generator, steps = generator_fun(randomise=False)
             steps = int(np.rint(steps * fraction_of_data_set))
+
+            if steps == 0:
+                continue
 
             predictions = []
             for step in range(steps):
@@ -575,7 +601,7 @@ class MainApplication(EvaluationApplication):
                 feature_groups[highest_importance][0] = np.array(feature_groups[highest_importance][0].tolist() + carry)
                 recombined = feature_groups[:highest_importance] + \
                              feature_groups[highest_importance] + \
-                             feature_groups[highest_importance+1:]
+                             feature_groups[highest_importance + 1:]
                 assert 0 not in map(len, recombined)
                 feature_groups = recombined
                 wrapped_model = ModelWrapper(model, x, feature_groups)
@@ -627,7 +653,8 @@ class MainApplication(EvaluationApplication):
             sorted_idx = np.argsort(group_importances)[::-1]
             feature_groups_transformed = [feature_groups[idx] for idx in sorted_idx]
             feature_groups_transformed = list(map(lambda group:
-                                                  list(map(lambda feature_idx: get_feature_names()[feature_idx], sorted(group))),
+                                                  list(map(lambda feature_idx: get_feature_names()[feature_idx],
+                                                           sorted(group))),
                                                   feature_groups_transformed))
             group_importances = [group_importances[idx] for idx in sorted_idx]
 

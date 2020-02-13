@@ -54,7 +54,7 @@ def parse_parameters():
                              "or a list of feature selection steps to be performed in sequence, delimited by a comma.")
     parser.add_argument("--n_jobs", type=int, default=-1,
                         help="Number of processes to use where available for multitasking.")
-    parser.add_argument("--threshold", default=None, type=float,
+    parser.add_argument("--threshold", default=None,
                         help="Threshold override to use with predictive model. "
                              "If None, the threshold is learnt from the validation set. (Default: None).")
     parser.add_argument("--learning_rate", default=0.0001, type=float,

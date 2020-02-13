@@ -29,7 +29,8 @@ from precision_fda_brain_biomarker.apps.util import time_function
 
 
 class DataLoader(object):
-    DATA_FILE_NAME_TEMPLATE = "sc{SUBCHALLENGE_INDEX}_Phase{PHASE_INDEX}_{SUBCHALLENGE_INDICATOR}_{MODALITY_TYPE}.tsv"
+    DATA_FILE_NAME_TEMPLATE = \
+        "sc{SUBCHALLENGE_INDEX}_Phase{PHASE_INDEX}_{SUBCHALLENGE_INDICATOR}_{MODALITY_TYPE}.{EXTENSION}"
 
     MODALITY_TYPE_FEATURE = "FeatureMatrix"
     MODALITY_TYPE_OUTCOME = "Outcome"
@@ -67,6 +68,9 @@ class DataLoader(object):
 
     @staticmethod
     def report_data_fold(x, y, set_name):
+        if len(x) == 0 or len(y) == 0:
+            return
+
         counters, type_maps, map_names = DataLoader.get_dataset_properties(x, y)
 
         output_message = ""
@@ -151,6 +155,21 @@ class DataLoader(object):
                                    do_resample=do_resample, resample_seed=resample_seed)
 
     @staticmethod
+    def get_data_ph2_sc1(args, seed=0, do_resample=False, resample_seed=0):
+        return DataLoader.get_data(args, phase_index=2, subchallenge_index=1, seed=seed,
+                                   do_resample=do_resample, resample_seed=resample_seed)
+
+    @staticmethod
+    def get_data_ph2_sc2(args, seed=0, do_resample=False, resample_seed=0):
+        return DataLoader.get_data(args, phase_index=2, subchallenge_index=2, seed=seed,
+                                   do_resample=do_resample, resample_seed=resample_seed)
+
+    @staticmethod
+    def get_data_ph2_sc3(args, seed=0, do_resample=False, resample_seed=0):
+        return DataLoader.get_data(args, phase_index=2, subchallenge_index=3, seed=seed,
+                                   do_resample=do_resample, resample_seed=resample_seed)
+
+    @staticmethod
     def get_phenotype_maps():
         sex_map = {
             # 'UNKNOWN': 0,
@@ -224,7 +243,8 @@ class DataLoader(object):
                                             validation_set_fraction, test_set_fraction,
                                             do_resample=do_resample, seed=seed, resample_seed=resample_seed,
                                             split_index_inner=split_index_inner, num_splits_inner=num_splits_inner,
-                                            split_index_outer=split_index_outer, num_splits_outer=num_splits_outer)
+                                            split_index_outer=split_index_outer, num_splits_outer=num_splits_outer,
+                                            phase_index=phase_index)
         ret_val = list(ret_val)
         ret_val += [phenotypes_names + features_names.tolist()]
         return tuple(ret_val)
@@ -241,7 +261,8 @@ class DataLoader(object):
                                                PHASE_INDEX=phase_index,
                                                SUBCHALLENGE_INDEX=subchallenge_index,
                                                SUBCHALLENGE_INDICATOR=DataLoader.SUBCHALLENGE_MAP[subchallenge_index],
-                                               MODALITY_TYPE=DataLoader.MODALITY_TYPE_PHENOTYPE
+                                               MODALITY_TYPE=DataLoader.MODALITY_TYPE_PHENOTYPE,
+                                               EXTENSION="txt" if phase_index == 2 else "tsv"
                                            )), sep="\t")
         phenotypes_names = phenotypes.columns[1:]
         phenotypes = phenotypes.values
@@ -251,7 +272,8 @@ class DataLoader(object):
                                              PHASE_INDEX=phase_index,
                                              SUBCHALLENGE_INDEX=subchallenge_index,
                                              SUBCHALLENGE_INDICATOR=DataLoader.SUBCHALLENGE_MAP[subchallenge_index],
-                                             MODALITY_TYPE=DataLoader.MODALITY_TYPE_FEATURE
+                                             MODALITY_TYPE=DataLoader.MODALITY_TYPE_FEATURE,
+                                             EXTENSION="txt" if phase_index == 2 else "tsv"
                                          )), sep="\t")
 
         features_names = features.columns.values[1:]
@@ -264,14 +286,15 @@ class DataLoader(object):
         features = features[:, 1:].astype(float)
 
         if phase_index == 2:
-            outcomes = np.zeros((len(phenotypes), 2))  # We do not have outcome data available in Phase 2.
+            outcomes = np.zeros((len(phenotypes), 1))  # We do not have outcome data available in Phase 2.
         else:
             outcomes = read_csv(os.path.join(dataset_path,
                                              DataLoader.DATA_FILE_NAME_TEMPLATE.format(
                                                  PHASE_INDEX=phase_index,
                                                  SUBCHALLENGE_INDEX=subchallenge_index,
                                                  SUBCHALLENGE_INDICATOR=DataLoader.SUBCHALLENGE_MAP[subchallenge_index],
-                                                 MODALITY_TYPE=DataLoader.MODALITY_TYPE_OUTCOME
+                                                 MODALITY_TYPE=DataLoader.MODALITY_TYPE_OUTCOME,
+                                                 EXTENSION="txt" if phase_index == 2 else "tsv"
                                              )), sep="\t").values
             patient_id_outcomes = outcomes[:, 0:1]
             outcomes = outcomes[:, 1:]
@@ -301,7 +324,8 @@ class DataLoader(object):
     def get_data_folds(x, y, patient_ids, phenotypes_len, validation_set_fraction, test_set_fraction,
                        do_resample=False, seed=0, resample_seed=0,
                        split_index_inner=0, num_splits_inner=2,
-                       split_index_outer=0, num_splits_outer=2):
+                       split_index_outer=0, num_splits_outer=2,
+                       phase_index=1):
         num_patients, input_dim = x.shape[0], x.shape[-1]
 
         if do_resample:
@@ -314,16 +338,20 @@ class DataLoader(object):
         num_test_samples = int(np.rint(test_set_fraction * num_patients))
         num_validation_samples = int(np.rint(validation_set_fraction * num_patients))
 
-        (x_train, y_train, p_train), (x_val, y_val, p_val), (x_test, y_test, p_test)\
-            = DataLoader.split_dataset(x, y, patient_ids,
-                                       num_validation_samples,
-                                       num_test_samples,
-                                       phenotypes_len,
-                                       seed=seed,
-                                       split_index_inner=split_index_inner,
-                                       num_splits_inner=num_splits_inner,
-                                       split_index_outer=split_index_outer,
-                                       num_splits_outer=num_splits_outer)
+        if phase_index == 2:
+            (x_train, y_train, p_train), (x_val, y_val, p_val) = ([], [], []), ([], [], [])
+            (x_test, y_test, p_test) = (x, y, patient_ids)
+        else:
+            (x_train, y_train, p_train), (x_val, y_val, p_val), (x_test, y_test, p_test)\
+                = DataLoader.split_dataset(x, y, patient_ids,
+                                           num_validation_samples,
+                                           num_test_samples,
+                                           phenotypes_len,
+                                           seed=seed,
+                                           split_index_inner=split_index_inner,
+                                           num_splits_inner=num_splits_inner,
+                                           split_index_outer=split_index_outer,
+                                           num_splits_outer=num_splits_outer)
 
         # Report fold stats before normalising dates.
         DataLoader.report_data_fold(x_train, y_train, "training set")
