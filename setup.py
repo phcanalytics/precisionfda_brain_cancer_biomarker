@@ -30,7 +30,7 @@ setup(
     long_description=open('README.md').read(),
     install_requires=[
         "numpy >= 1.14.1",
-        "tensorflow == 1.14.0",
+        "tensorflow == 2.9.3",
         "Keras >= 1.2.2",
         "pandas >= 0.18.0",
         "h5py >= 2.6.0",
